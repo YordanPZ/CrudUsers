@@ -1,0 +1,140 @@
+  body{
+      background-image: url(/Cover.svg);
+      width: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+  }
+  html{
+      height: 100vh;
+  }
+  .container{
+      background-color: rgb(229, 229, 229);
+      width: auto;
+  }
+  .glass{
+      background-color: rgba(255, 255, 255, 0.486);
+      border: 1px solid rgba(255, 255, 255, 0.259);
+      backdrop-filter: blur(50px);
+  }
+  .btn{
+    background-color: rgba(0, 0, 0, 0.092);
+  }
+  
+  .inputBox {
+    position: relative;
+    width: 250px;
+  }
+  .divpass{
+    position: relative;
+    width: 250px;
+    display: flex;
+    gap: 1rem
+  }
+  .divpass input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.092);
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .divpass span{
+    margin-top: 5px;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  .btnpass{
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.092);
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: rgba(0, 0, 0, 0.092);
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  .container2{
+    background-color: rgb(203, 151, 151);
+  }
+  
+  .inputBox span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .divpass input:valid~span,
+  .divpass input:focus~span{
+    transform: translateX(50px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  .inputBox input:valid~span,
+  .inputBox input:focus~span {
+    transform: translateX(140px) translateY(-18px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox input:valid,
+  .divpass input:valid,
+  .divpass input:focus,
+  .inputBox input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
+  
