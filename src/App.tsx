@@ -80,7 +80,8 @@ function App (): JSX.Element {
   return (
     <>
       <Toaster richColors={true} expand={true}/>
-      <main className=' flex flex-col items-center mt-60 gap-5'>
+      <main className=' flex flex-col items-center mt-40 gap-5'>
+        <h1 className='text-7xl font-bold text-white text-center'>Users & Profiles</h1>
         <CreateBtn handleShowForm={handleShowForm} resetUserSelected={resetUserSelected} />
         <UsersList
           allUsers={allUsers}
