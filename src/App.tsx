@@ -15,7 +15,7 @@ function App (): JSX.Element {
 
   const getUsers = (): void => {
     axios
-      .get('https://users-crud.academlo.tech/users/')
+      .get('https://user-crud-bd.onrender.com/api/v1/users')
       .then(resp => { setAllUsers(resp.data) })
       .catch(err => { console.log(err) })
   }
@@ -26,7 +26,7 @@ function App (): JSX.Element {
 
   const AddUser = (user: User): void => {
     axios
-      .post('https://users-crud.academlo.tech/users/', user)
+      .post('https://user-crud-bd.onrender.com/api/v1/users', user)
       .then(() => {
         getUsers()
         setShowForm(!showForm)
@@ -40,7 +40,7 @@ function App (): JSX.Element {
 
   const deleteUser = (user: User): void => {
     axios
-      .delete(`https://users-crud.academlo.tech/users/${user.id}/`)
+      .delete(`https://user-crud-bd.onrender.com/api/v1/users/${user.id}`)
       .then(() => {
         getUsers()
         toast.success('Usuario eliminado')
@@ -61,7 +61,7 @@ function App (): JSX.Element {
 
   const editUser = (user: User): void => {
     axios
-      .put(`https://users-crud.academlo.tech/users/${user.id}/`, user)
+      .put(`https://user-crud-bd.onrender.com/api/v1/users/${user.id}`, user)
       .then(() => {
         getUsers()
         setShowForm(!showForm)
